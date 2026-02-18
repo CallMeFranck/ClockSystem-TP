@@ -53,7 +53,8 @@ jobs:
   
     - name: Build with Gradle
       run: gradle build
-  
+    - name: Test with Gradle
+      run: gradle test
     - name: Upload test reports
       if: always()
       uses: actions/upload-artifact@v4
