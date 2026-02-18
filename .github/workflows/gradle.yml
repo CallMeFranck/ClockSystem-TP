@@ -62,9 +62,9 @@ jobs:
         name: Test-Reports
         path: app/build/reports/tests
   
-     #- name: Publish test report summary
-      # if: always()
-       #run: |
+    - name: Publish test report summary
+      if: always()
+      run: |
         # echo "## Test report" >> $GITHUB_STEP_SUMMARY
          #echo "- Artifact: **Test-Reports** (download it from the Artifacts section of this run)" >> $GITHUB_STEP_SUMMARY
          #echo "- HTML entry point: \`build/reports/tests/test/index.html\`" >> $GITHUB_STEP_SUMMARY
