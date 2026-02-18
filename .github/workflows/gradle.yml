@@ -24,11 +24,11 @@ jobs:
       xvfb:
         image: selenium/standalone-chrome:latest
         options: -e VNC_SERVER=true -e VNC_PORT=5900
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+    # strategy:
+    #   matrix:
+    #     os: [ubuntu-latest, windows-latest, macos-latest]
 
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
       
 
     steps:
@@ -57,7 +57,7 @@ jobs:
     - name: Upload test reports
       uses: actions/upload-artifact@v4
       with:
-        name: Test-Reports-${{ matrix.os }}
+        name: Test-Reports
         path: build/reports/tests/
       
     # NOTE: The Gradle Wrapper is the default and recommended way to run Gradle (https://docs.gradle.org/current/userguide/gradle_wrapper.html).
