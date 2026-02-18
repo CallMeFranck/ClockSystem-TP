@@ -6,6 +6,8 @@ The application includes a watch, with timer, stopwatch and alarm functionality.
 
 ## ![Gradle CI](https://github.com/CallMeFranck/ClockSystem-TP/actions/workflows/gradle.yml/badge.svg)
 
+## ![Gradle CI](https://github.com/CallMeFranck/ClockSystem-TP/actions/workflows/pmd.yml/badge.svg)
+
 
 
 ## Build automation
