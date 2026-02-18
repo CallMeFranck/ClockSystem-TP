@@ -18,7 +18,7 @@ jobs:
         uses: pmd/pmd-github-action@v1
         with:
           rulesets: category/java/errorprone.xml
-          artifact_name: pmd-report   # <-- Correction ici
+          artifact_name: pmdReport   # <-- Correction ici
 
       - name: Publish PMD summary
         if: always()
