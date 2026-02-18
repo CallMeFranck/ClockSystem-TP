@@ -1,0 +1,28 @@
+name: PMD Analysis
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  pmd:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run PMD
+        id: pmd
+        uses: pmd/pmd-github-action@v1
+        with:
+          rulesets: category/java/errorprone.xml
+
+      - name: Publish PMD summary
+        if: always()
+        run: |
+          echo "## PMD Analysis Report" >> $GITHUB_STEP_SUMMARY
+          echo "- Violations: ${{ steps.pmd.outputs.violations }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Files scanned: ${{ steps.pmd.outputs.files }}" >> $GITHUB_STEP_SUMMARY
