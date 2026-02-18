@@ -29,6 +29,9 @@ jobs:
         with:
           languages: java
 
+      - name: Make Gradle wrapper executable
+        run: chmod +x ./gradlew
+
       - name: Build project
         run: ./gradlew build
 
