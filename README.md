@@ -4,7 +4,7 @@ This is a gradle-based Java project for a Clock with Swing GUI and JUnit5 unit t
 
 The application includes a watch, with timer, stopwatch and alarm functionality. Its implementation is based on a statechart, using the state and singleton design patterns.
 
-## ![Gradle CI](https://github.com/CallMeFranck/ClockSystem-TP/actions/workflows/gradle.yml/badge.svg)
+## ![Gradle CI]([https://github.com/CallMeFranck/ClockSystem-TP/actions/workflows/gradle.yml/badge.svg](https://github.com/CallMeFranck/ClockSystem-TP/actions/runs/22137253481))
 
 
 ## Build automation
