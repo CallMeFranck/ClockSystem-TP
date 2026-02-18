@@ -4,6 +4,9 @@ This is a gradle-based Java project for a Clock with Swing GUI and JUnit5 unit t
 
 The application includes a watch, with timer, stopwatch and alarm functionality. Its implementation is based on a statechart, using the state and singleton design patterns.
 
+## ![Gradle CI](https://github.com/CallMeFranck/ClockSystem-TP/actions/workflows/gradle.yml/badge.svg)
+
+
 ## Build automation
 
 The application uses the **gradle** build automation system to build, test and exexute the application.
@@ -54,6 +57,8 @@ Due to the graphical nature of the Java application, running the GUI may not be 
       ([documentation](https://www.jetbrains.com/help/idea/connect-to-devcontainer.html))
 3. Open the project in your IDE, and you should see a notification to reopen the project in a container, click on it.
 4. Once the project is reopened in the container, you need to wait a bit for the container to build and start, and then you can start developing, all the tools and dependencies are already installed in the container.
+
+   
 
 
 
