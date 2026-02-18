@@ -62,12 +62,12 @@ jobs:
         name: Test-Reports
         path: build/reports/tests/
   
-    - name: Publish test report summary
-      if: always()
-      run: |
-        echo "## Test report" >> $GITHUB_STEP_SUMMARY
-        echo "- Artifact: **Test-Reports** (download it from the Artifacts section of this run)" >> $GITHUB_STEP_SUMMARY
-        echo "- HTML entry point: \`build/reports/tests/test/index.html\`" >> $GITHUB_STEP_SUMMARY
+     #- name: Publish test report summary
+      # if: always()
+       #run: |
+        # echo "## Test report" >> $GITHUB_STEP_SUMMARY
+         #echo "- Artifact: **Test-Reports** (download it from the Artifacts section of this run)" >> $GITHUB_STEP_SUMMARY
+         #echo "- HTML entry point: \`build/reports/tests/test/index.html\`" >> $GITHUB_STEP_SUMMARY
 
       
     # NOTE: The Gradle Wrapper is the default and recommended way to run Gradle (https://docs.gradle.org/current/userguide/gradle_wrapper.html).
