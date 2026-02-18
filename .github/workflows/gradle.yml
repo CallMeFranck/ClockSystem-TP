@@ -52,7 +52,7 @@ jobs:
         gradle-version: "8.5"
     # build project
     - name: Build with Gradle
-      run: gradle build
+      run: gradle build -Djava.awt.headless=true
         # upload test reports
     - name: Upload test reports
       uses: actions/upload-artifact@v4
