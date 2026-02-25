@@ -15,7 +15,7 @@ jobs:
 
       - name: Run PMD
         id: pmd
-        uses: pmd/pmd-github-action@v1
+        uses: pmd/pmd-github-action@v2
         with:
           rulesets: category/java/errorprone.xml
           artifact_name: pmdReport   # <-- Correction ici
